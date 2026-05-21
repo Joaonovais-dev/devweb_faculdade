@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid De imagens</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            background-color: #f7f7f7;
+            border: 2px solid #333;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .grid-item figcaption {
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        @media (max-width: 900px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 16px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                padding: 12px;
+            }
+
+            .grid-item {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grid De imagens</h1>
+    </header>
+     <nav>
+        <ul>
+            <li><a href="index.html">início</a></li>
+            <li><a href="tabelhinha.html">Tabelhinha 
+<p> &#128526;</p>
+ </a></li>
+ <li><a href="ordenadas/ordenadas.html">Ordenadas</a></li>
+ <li><a href="formulario.html">Formulário</a></li>
+ <li><a href="grid.html">Grid</a></li>
+        </ul>
+    </nav>
+
+    <main class="grid-container">
+        <figure class="grid-item">
+            <img src="Captura de tela 2025-09-12 105625.png" alt="Imagem 1">
+            <figcaption>Captura 12/09/2025</figcaption>
+        </figure>
+        <figure class="grid-item">
+            <img src="Captura de tela 2025-09-12 142158.png" alt="Imagem 2">
+            <figcaption>Captura 12/09/2025</figcaption>
+        </figure>
+        <figure class="grid-item">
+            <img src="Captura de tela 2025-09-12 142733.png" alt="Imagem 3">
+            <figcaption>Captura 12/09/2025</figcaption>
+        </figure>
+        <figure class="grid-item">
+            <img src="Captura de tela 2025-09-29 155217.png" alt="Imagem 4">
+            <figcaption>Captura 29/09/2025</figcaption>
+        </figure>
+        <figure class="grid-item">
+            <img src="Captura de tela 2025-10-16 132009.png" alt="Imagem 5">
+            <figcaption>Captura 16/10/2025</figcaption>
+        </figure>
+        <figure class="grid-item">
+            <img src="Captura de tela 2025-10-25 160455.png" alt="Imagem 6">
+            <figcaption>Captura 25/10/2025</figcaption>
+        </figure>
+    </main>
+</body>
+</html>
